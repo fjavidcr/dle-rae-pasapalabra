@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, splitVendorChunkPlugin } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
       formats: ['es']
     },
     rollupOptions: {
-      external: /^lit/
     }
-  }
+  },
+  plugins: [splitVendorChunkPlugin()]
 })
