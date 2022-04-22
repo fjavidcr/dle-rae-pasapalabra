@@ -1,10 +1,5 @@
-// import axios from 'axios'
-
-const __HOST = 'https://fjavidcr-dictionary-api.herokuapp.com/oxford'
-
+const __HOST = 'https://fjavidcr-dictionary-api.herokuapp.com/api/v1/oxford'
 const __HEADERS = {
-  'Access-Control-Allow-Origin': '*',
-  'Origin': 'pasapalabra.js'
 }
 
 export class OxfordDictionaryApi {
