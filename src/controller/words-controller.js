@@ -1,5 +1,5 @@
+import { OxfordDictionaryApi } from '../api/oxford-dictionary-api'
 import { PalabarasAleatoriasApi } from '../api/palabaras-aleatorias-api'
-import { RaeApi } from '../api/rae-api-v2'
 
 const ALPHABET = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
@@ -66,7 +66,7 @@ class WordsController {
   }
 
   static async __searchWords() {
-    RaeApi.searchWords()
+    OxfordDictionaryApi.searchWord()
     this.words = await PalabarasAleatoriasApi.searchWords()
       .then(response =>
         response.map(x => {
