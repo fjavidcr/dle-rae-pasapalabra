@@ -1,9 +1,4 @@
-import axios from 'axios'
-import RaeClient from 'rae-lite'
-
-const rae = new RaeClient()
-
-rae.create().search('casa').then(console.log)
+// import axios from 'axios'
 
 const RAE_HOST = 'https://dle.rae.es/srv/search?w=palabra'
 
