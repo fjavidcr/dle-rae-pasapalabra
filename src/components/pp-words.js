@@ -1,5 +1,5 @@
 import { html, css, LitElement } from 'lit'
-import { WordsController } from '../controller/words-controller'
+import { DictionaryApi } from '../api/fjavidcr-dictionary-api'
 import { PPWord } from './pp-word'
 
 /**
@@ -44,7 +44,7 @@ export class PPWords extends LitElement {
     //   query: 'ja'
     // })
     this.words = {}
-    this.words = await WordsController.getChosenWords()
+    await DictionaryApi.getAllWords() 
   }
 
   _printWords() {

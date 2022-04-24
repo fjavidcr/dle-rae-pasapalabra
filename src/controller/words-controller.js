@@ -1,4 +1,3 @@
-import { OxfordDictionaryApi } from '../api/oxford-dictionary-api'
 import { PalabarasAleatoriasApi } from '../api/palabaras-aleatorias-api'
 
 const ALPHABET = [
@@ -66,7 +65,6 @@ class WordsController {
   }
 
   static async __searchWords() {
-    OxfordDictionaryApi.searchWord()
     this.words = await PalabarasAleatoriasApi.searchWords()
       .then(response =>
         response.map(x => {
