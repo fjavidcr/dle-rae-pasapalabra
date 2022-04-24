@@ -2,8 +2,8 @@ import { PalabarasAleatoriasApi } from '../api/palabaras-aleatorias-api'
 
 const ALPHABET = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-  'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 
-  's', 'u', 'v', 'w', 'x', 'y', 'z'
+  'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q',
+  'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
 const ALPHABET_CONTROL = {}
 ALPHABET.forEach(letter => ALPHABET_CONTROL[letter] = false)
