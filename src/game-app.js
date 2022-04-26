@@ -7,7 +7,7 @@ import { PPWords } from './components/pp-words'
  * @slot - This element has a slot
  * @csspart button - The button
  */
-export class AppPasapalabra extends LitElement {
+export class GameApp extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -38,4 +38,4 @@ export class AppPasapalabra extends LitElement {
   }
 }
 
-window.customElements.define('app-pasapalabra', AppPasapalabra)
+window.customElements.define('game-app', GameApp)

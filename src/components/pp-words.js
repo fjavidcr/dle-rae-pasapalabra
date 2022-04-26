@@ -1,5 +1,6 @@
 import { html, css, LitElement } from 'lit'
 import { DictionaryApi } from '../api/fjavidcr-dictionary-api'
+import { WordsController } from '../controller/words-controller'
 import { PPWord } from './pp-word'
 
 /**
@@ -40,11 +41,8 @@ export class PPWords extends LitElement {
   }
 
   async _getWords() {
-    // RaeApi.searchWords({
-    //   query: 'ja'
-    // })
     this.words = {}
-    await DictionaryApi.getAllWords() 
+    this.words = await WordsController.getChosenWords()
   }
 
   _printWords() {

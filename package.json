@@ -1,10 +1,10 @@
 {
-  "name": "dle-rae-pasapalabra",
+  "name": "game-app",
   "private": true,
   "version": "0.1.0",
-  "main": "dist/app-pasapalabra.es.js",
+  "main": "dist/game-app.es.js",
   "exports": {
-    ".": "./dist/app-pasapalabra.es.js"
+    ".": "./dist/game-app.es.js"
   },
   "files": [
     "dist"
